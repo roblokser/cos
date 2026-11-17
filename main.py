@@ -14,8 +14,7 @@ SLIDES = [
 
 def res(*parts):
     base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
-    return os.path.join(base, "assets", *parts)
-
+return os.path.join(base, *parts)
 
 mci = ctypes.windll.winmm.mciSendStringW
 
