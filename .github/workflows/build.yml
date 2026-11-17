@@ -11,7 +11,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pyinstaller pillow
-      - run: pyinstaller --onefile --noconsole --name screamer --add-data "assets;assets" main.py
+      - run: pyinstaller --onefile --noconsole --name screamer --add-data "eye.png;." --add-data "furry.jpg;." --add-data "scythe.png;." --add-data "glitch.mp3;." --add-data "music.mp3;." main.py
       - uses: actions/upload-artifact@v4
         with:
           name: screamer-exe
